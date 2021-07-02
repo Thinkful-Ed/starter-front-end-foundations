@@ -25,7 +25,15 @@ h3 {
 /* --- Groups & Items --- */
 
 .group {
+  display: flex;
+  flex-direction: row;
 }
 
 .item {
+  flex: 1;
+  margin: 1rem;
+}
+
+.item-double{
+  flex:2
 }
