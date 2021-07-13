@@ -18,14 +18,23 @@ h2 {
 }
 
 h3 {
-  margin: 12px 0;
+  margin: 16px 0;
   border-bottom: 1px solid lightgray;
 }
 
 /* --- Groups & Items --- */
 
 .group {
+  display: flex;
+  flex-direction: row;
 }
 
 .item {
+  flex: 1;
+  margin: 10px;
+}
+
+.item-double {
+  flex: 2;
+  margin: 10px;
 }
