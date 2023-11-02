@@ -1,3 +1,65 @@
+* {
+  border: 1px solid red;
+}
+
 body {
   margin: 0;
+}
+
+header {
+  background-color: black;
+  /* space under the header so main content is not so close to the navigation */
+  margin-bottom: 40px;
+}
+
+header h1 {
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding-top: 20px;
+}
+
+header nav {
+  display: flex;
+  /* center nav element */
+  justify-content: center;
+}
+
+header nav ul {
+  display: flex;
+  padding-left: 0;
+  /* remove bullet ponits */
+  list-style: none;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  margin: 0 20px 0 0;
+}
+
+header nav ul li:last-child a {
+  margin-right: 0;
+}
+
+/* When a web browser is larger then 600 pix, apply this rules */
+@media all and (min-width: 600px) {
+  header {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 30px;
+  }
+
+  header h1 {
+    margin: 14px 0;
+    padding-top: 0;
+  }
+
+  header nav {
+    margin-top: 8px
+  }
+  
+  header nav ul li a:hover {
+    color: #bdbdbd;
+  }
 }
