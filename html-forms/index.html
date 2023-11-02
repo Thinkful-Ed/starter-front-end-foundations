@@ -13,6 +13,33 @@
   </head>
 
   <body>
-    <main></main>
+    <main>
+      <form method="post">
+        <div class="div-form">
+          <div class="col">
+            <label for="name">Full Name:<label>
+            <input id="name" type="text" name="name" required/>
+          </div>
+          <div class="col">
+            <label for="email">Email:</label>
+            <input id="email" type="email" name="email" required/>
+          </div>
+          <div class="col">
+            <label for="for-message">Your Message</label>
+            <textarea 
+              class="email-text"
+              id="for-message"
+              name="message"
+              maxlength="200"
+              required>
+            </textarea>
+          </div>
+      </div>
+        <footer>
+          <button type="submit">Send</button>
+          <button type="reset">Reset</button>
+        </footer>
+      </form>
+    </main>
   </body>
 </html>
