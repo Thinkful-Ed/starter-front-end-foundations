@@ -13,6 +13,38 @@
   </head>
 
   <body>
-    <main></main>
+    <main>
+      <form>
+        <div>
+          <label for="name">Full Name</label>
+          <input
+            id="name"
+            type="text"
+            name="name"
+            />
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input
+            id="email"
+            type="text"
+            name="email"
+            />
+        </div>
+        <div>
+          <label for="form-message">Your message</label>
+          <textarea
+            id="form-message"
+            name="message"
+            autofocus="on"
+            required
+            maxlength="200"
+            ></textarea>
+        </div>
+        <div>
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </main>
   </body>
 </html>
