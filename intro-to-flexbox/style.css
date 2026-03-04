@@ -5,7 +5,13 @@ main {
 }
 
 section {
-  margin-bottom: 100px;
+  margin-bottom: 50px;
+}
+
+h1, h2, h3 {
+  font-family: Helvetica;
+  text-align: center;
+  border: 5px;
 }
 
 h1 {
@@ -22,10 +28,31 @@ h3 {
   border-bottom: 1px solid lightgray;
 }
 
-/* --- Groups & Items --- */
-
-.group {
+p, div {
+  font-family: Helvetica;
 }
 
+/* --- Groups & Items (flexbox --- */
+
+.group {
+  display: flex;
+  flex-direction: row; /* or column */
+  justify-content: space-between; /* sets even space side around elements will always be even [optional] */
+}
+
+
 .item {
+    text-align: center;
+    border: 2px red solid;
+    padding: 5px;
+    flex: 1;
+    margin: 10px;
+}
+
+.item-double{
+  flex:2;
+}
+
+.item-triple{
+  flex:3;
 }

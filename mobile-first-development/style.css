@@ -36,3 +36,23 @@ h3 {
 .item-double {
   flex: 2;
 }
+
+/* default flex settings for larger screen */
+.group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+}
+
+
+/* only apply these CSS rules when web browser is > 800px */
+@media all and (min-width: 800px) {
+  section,
+  h1 {
+    padding: 0 10%;
+  }
+
+  .group {
+    flex-direction: row;
+  }
+}

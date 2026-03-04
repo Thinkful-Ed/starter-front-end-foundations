@@ -1,0 +1,53 @@
+/* Media Queries Practice */
+
+/* p {
+  font-size: 14px;
+}
+
+@media all and (min-width: 800px) {
+  p {
+    font-size: 24px;
+  }
+} */
+
+
+/* body {
+  background-color: red;
+}
+
+@media all and (min-width: 600px) {
+  body {
+    background-color: yellow;
+  }
+} */
+
+/* ----------------------------------------------- */
+
+/* Graceful degradation -- desktop first approach */ 
+
+/* body {
+  background-color: green;
+}
+
+/* This applies from 0px to 600px */
+/* @media all and (max-width: 600px) {
+  body {
+    background-color: red;
+  }
+} */ */
+
+
+/* Progressive enhancement -- designing for the smallest screen first */
+
+/* body {
+  background-color: red;
+} */
+
+/* This applies from 600px and larger */
+/* @media all and (min-width: 600px) {
+  body {
+    background-color: green;
+  }
+} */
+
+
